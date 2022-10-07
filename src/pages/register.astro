@@ -1,0 +1,200 @@
+---
+import Layout from "@layout/layout.astro"
+---
+
+<Layout title="Register a new account" description="Register a new account to access our services">
+	<section class="grid place-content-center h-[100rem]">
+	  <div class="">
+	    <main class="flex items-center justify-center px-8 py-8 sm:px-12 lg:col-span-7 lg:py-12 lg:px-16 xl:col-span-6">
+	      <div class="max-w-xl lg:max-w-3xl">
+	        <h1 class="mt-6 text-2xl font-bold text-sky-600 sm:text-3xl md:text-4xl text-center">
+	          Welcome to Cloud8HQ
+	        </h1>
+
+	        <p class="mt-4 leading-relaxed text-center leading-loose">
+	          Register a new account to access our services. The process is straight forward and fast
+	        </p>
+
+	        <form action="" class="mt-8 grid grid-cols-6 gap-6 bg-gray-200 p-8 rounded">
+	        	<h2 class="text-sky-600 col-span-6 font-bold">
+	        		Personal Information
+	        	</h2>
+	          <div class="col-span-6 sm:col-span-3">
+	            <label for="FirstName" class="block text-sm font-medium">
+	              First Name
+	            </label>
+
+	            <input type="text" id="FirstName" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm" placeholder="First name" />
+	          </div>
+
+	          <div class="col-span-6 sm:col-span-3">
+	            <label for="LastName" class="block text-sm font-medium">
+	              Last Name
+	            </label>
+
+	            <input type="text" id="LastName" name="last_name" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm" placeholder="Last name" />
+	          </div>
+
+	          <div class="col-span-6 sm:col-span-3">
+	            <label for="Email" class="block text-sm font-medium">
+	              Email
+	            </label>
+
+	            <input type="email" id="Email" name="email" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm" placeholder="someone@example.com" />
+	          </div>
+
+	          <div class="col-span-6 sm:col-span-3">
+	            <label for="phone" class="block text-sm font-medium">
+	              Phone
+	            </label>
+
+	            <div class="flex space-x-0">
+	            	<select class="mt-1 rounded rounded-r-0 border-sky-600 bg-white text-sm shadow-sm">
+	            		<option>+254</option>
+	            	</select>
+		            <input type="text" id="phone" class="mt-1 w-full rounded rounded-l-0 border-sky-600 border-l-0 bg-white text-sm shadow-sm" placeholder="0712345678" />
+	            </div>
+	          </div>
+
+	          <h2 class="text-sky-600 col-span-6 font-bold">
+	        		Billing Address
+	        	</h2>
+	        	
+	        	<div class="col-span-6">
+	            <label for="company" class="block text-sm font-medium">
+	              Company Name
+	            </label>
+
+	            <input type="text" id="company" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm" placeholder="Example Company" />
+	          </div>
+
+	          <div class="col-span-6">
+	            <label for="street" class="block text-sm font-medium">
+	              Street Address
+	            </label>
+
+	            <input type="text" id="street" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm" placeholder="Main street" />
+	          </div>
+
+	          <div class="col-span-6">
+	            <label for="street_2" class="block text-sm font-medium">
+	              Street Address 2
+	            </label>
+
+	            <input type="text" id="street_2" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm" placeholder="Secondary Street" />
+	          </div>
+
+	          <div class="col-span-6 sm:col-span-3">
+	            <label for="city" class="block text-sm font-medium">
+	              City
+	            </label>
+
+	            <input type="text" id="city" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm" placeholder="Nairobi" />
+	          </div>
+
+	          <div class="col-span-6 sm:col-span-3">
+	            <label for="state" class="block text-sm font-medium">
+	              State
+	            </label>
+
+	            <input type="text" id="state" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm" placeholder="Nairobi" />
+	          </div>
+
+	          <div class="col-span-6 sm:col-span-3">
+	            <label for="postal_code" class="block text-sm font-medium">
+	              Postal Code
+	            </label>
+
+	            <input type="text" id="postal_code" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm" placeholder="00100" />
+	          </div>
+
+	          <div class="col-span-6 sm:col-span-3">
+	            <label for="country" class="block text-sm font-medium">
+	              Country
+	            </label>
+
+	            <select type="text" id="country" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm">
+	            	<option disabled selected>-- Select Option --</option>
+	            </select>
+	          </div>
+
+	          <div class="col-span-6">
+	            <label for="vat_number" class="block text-sm font-medium">
+	              VAT Number
+	            </label>
+
+	            <input type="text" id="vat_number" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm" placeholder="QW2341TRE5" />
+	          </div>
+
+	          <h2 class="text-sky-600 col-span-6 font-bold">
+	        		Payment Currency
+	        	</h2>
+
+	        	<div class="col-span-6">
+	            <label for="currency" class="block text-sm font-medium">
+	              Payment Currency
+	            </label>
+
+	            <select id="currency" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm">
+	            	<option selected disabled>-- Select Currency --</option>
+	            </select>
+	          </div>
+
+	          <h2 class="text-sky-600 col-span-6 font-bold">
+	        		Account Security
+	        	</h2>
+	          <div class="col-span-6 sm:col-span-3">
+	            <label for="Password" class="block text-sm font-medium">
+	              Password
+	            </label>
+
+	            <input type="password" id="Password" name="password"
+	              class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm text-gray-700 shadow-sm" placeholder="Enter Password" />
+	          </div>
+
+	          <div class="col-span-6 sm:col-span-3">
+	            <label for="PasswordConfirmation" class="block text-sm font-medium">
+	              Password Confirmation
+	            </label>
+
+	            <input type="password" id="PasswordConfirmation" name="password_confirmation" class="mt-1 w-full rounded-md border-sky-600 bg-white text-sm shadow-sm" placeholder="Confirm Password" />
+	          </div>
+
+	          <div class="col-span-6">
+	            <label for="MarketingAccept" class="flex gap-4">
+	              <input type="checkbox" id="MarketingAccept" name="marketing_accept" class="h-5 w-5 rounded-md border-sky-600 bg-white shadow-sm" />
+
+	              <span class="text-sm">
+	                I want to receive emails about events, product updates and
+	                company announcements.
+	              </span>
+	            </label>
+	          </div>
+
+	          <div class="col-span-6">
+	            <p class="text-sm text-gray-800">
+	              By creating an account, you agree to our
+	              <a href="/terms-of-service" class="text-sky-600 underline">
+	                terms and conditions
+	              </a>
+	              and
+	              <a href="/privacy-policy" class="text-sky-600 underline">privacy policy</a>.
+	            </p>
+	          </div>
+
+	          <div class="col-span-6 sm:flex sm:items-center sm:gap-4">
+	            <button class="inline-block shrink-0 rounded-md border border-blue-600 bg-blue-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-transparent hover:text-blue-600 focus:outline-none focus:ring active:text-blue-500">
+	              Create an account
+	            </button>
+
+	            <p class="mt-4 text-sm text-gray-800 sm:mt-0">
+	              Already have an account?
+	              <a href="/login" class="text-sky-600 underline">Log in</a>.
+	            </p>
+	          </div>
+	        </form>
+	      </div>
+	    </main>
+	  </div>
+	</section>
+</Layout>
